@@ -1,7 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+// import './App.css'
+import Apple_class from './component/Apple'
+import Props_sample from './component/Props'
+import Sample_class from './component/Sample'
+import State_sample from './component/State'
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -38,33 +42,65 @@ import './App.css'
 
 
 
+// function App() {
+//   const data=[
+//     {id:1,name:"suni",age:24},
+//     {id:2,name:"sasi",age:54},
+//     {id:3,name:"sura",age:24}
+//   ]
+//   return (
+//     <>
+//     <h1>Student Details</h1>
+//     <table>
+//       <thead>
+//         <th>Id</th>
+//         <th>Name</th>
+//         <th>Age</th>
+//       </thead>
+//       <tbody>
+//         {data.map((element)=>(
+//           <tr key={element.id}>
+//             <td>{element.id}</td>
+//             <td>{element.name}</td>
+//             <td>{element.age}</td>
+//           </tr>
+//         ))}
+//       </tbody>
+//     </table>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+// function App() {
+//   return(
+//     <>
+//     <div>
+//       <Sample_class/>
+//     </div>
+//     </>
+//   )
+// }
+
+
 function App() {
-  const data=[
-    {id:1,name:"suni",age:24},
-    {id:2,name:"sasi",age:54},
-    {id:3,name:"sura",age:24}
-  ]
-  return (
+  return(
     <>
-    <h1>Student Details</h1>
-    <table>
-      <thead>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Age</th>
-      </thead>
-      <tbody>
-        {data.map((element)=>(
-          <tr key={element.id}>
-            <td>{element.id}</td>
-            <td>{element.name}</td>
-            <td>{element.age}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <div>
+      <Apple_class/>
+      <State_sample/>
+      <Props_sample  color="yellow" width="300px"/>
+    </div>
     </>
   )
 }
 
 export default App
+
+
